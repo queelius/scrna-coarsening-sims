@@ -1,0 +1,37 @@
+---- alpha_1 = 0 ----
+   60 reps in 330.1 s
+  DE bias: naive = -0.0075, PLAIN = -0.0917, REG = -0.0898, TRUE = +0.0146
+  Selection rates over 60 reps:
+reg_sel
+constant logistic 
+       9       51 
+  PLAIN spike-fit alpha_0 = 2.282, alpha_1 = 0.158 (truth 1.50, 0.00)
+  REG   spike-fit alpha_0 = 2.263, alpha_1 = 0.146 (truth 1.50, 0.00)
+---- alpha_1 = 0.3 ----
+   60 reps in 279.1 s
+  DE bias: naive = -0.0023, PLAIN = -0.0468, REG = -0.0468, TRUE = +0.0083
+  Selection rates over 60 reps:
+reg_sel
+logistic 
+      60 
+  PLAIN spike-fit alpha_0 = 1.963, alpha_1 = 0.239 (truth 1.50, 0.30)
+  REG   spike-fit alpha_0 = 1.963, alpha_1 = 0.239 (truth 1.50, 0.30)
+---- alpha_1 = 0.6 ----
+   60 reps in 288.9 s
+  DE bias: naive = -0.0430, PLAIN = -0.0240, REG = -0.0240, TRUE = +0.0035
+  Selection rates over 60 reps:
+reg_sel
+logistic 
+      60 
+  PLAIN spike-fit alpha_0 = 1.662, alpha_1 = 0.322 (truth 1.50, 0.60)
+  REG   spike-fit alpha_0 = 1.662, alpha_1 = 0.322 (truth 1.50, 0.60)
+---- alpha_1 = 1 ----
+   60 reps in 309.6 s
+  DE bias: naive = -0.0536, PLAIN = -0.0214, REG = -0.0214, TRUE = +0.0016
+  Selection rates over 60 reps:
+reg_sel
+logistic 
+      60 
+  PLAIN spike-fit alpha_0 = 1.284, alpha_1 = 0.386 (truth 1.50, 1.00)
+  REG   spike-fit alpha_0 = 1.284, alpha_1 = 0.386 (truth 1.50, 1.00)
+Done.

@@ -1,0 +1,30 @@
+---- alpha_1 = 0 ----
+   25 reps in 1.5 s
+  naive          relbias (5/50/95): 0.1 0.246 0.459 
+  oracle PERFECT relbias (5/50/95): -0.001 0.034 0.069 
+  oracle ERCC    relbias (5/50/95): -0.009 0.035 0.069 
+  ERCC-fit alpha_0 mean: 1.497  alpha_1: -0.002  (truth 1.5 , 0 )
+  PERFECT-fit alpha_0 mean: 1.515  alpha_1: 0.007 
+---- alpha_1 = 0.3 ----
+   25 reps in 1.7 s
+  naive          relbias (5/50/95): 0.362 0.469 0.627 
+  oracle PERFECT relbias (5/50/95): 0.007 0.029 0.049 
+  oracle ERCC    relbias (5/50/95): 0.002 0.027 0.05 
+  ERCC-fit alpha_0 mean: 1.499  alpha_1: 0.299  (truth 1.5 , 0.3 )
+  PERFECT-fit alpha_0 mean: 1.516  alpha_1: 0.307 
+---- alpha_1 = 0.6 ----
+   25 reps in 1.7 s
+  naive          relbias (5/50/95): 0.488 0.654 0.924 
+  oracle PERFECT relbias (5/50/95): 0.002 0.025 0.045 
+  oracle ERCC    relbias (5/50/95): -0.008 0.023 0.048 
+  ERCC-fit alpha_0 mean: 1.498  alpha_1: 0.599  (truth 1.5 , 0.6 )
+  PERFECT-fit alpha_0 mean: 1.527  alpha_1: 0.614 
+---- alpha_1 = 1 ----
+   25 reps in 1.8 s
+  naive          relbias (5/50/95): 0.487 0.754 1.089 
+  oracle PERFECT relbias (5/50/95): -0.003 0.019 0.032 
+  oracle ERCC    relbias (5/50/95): -0.008 0.013 0.026 
+  ERCC-fit alpha_0 mean: 1.5  alpha_1: 1.001  (truth 1.5 , 1 )
+  PERFECT-fit alpha_0 mean: 1.512  alpha_1: 1.002 
+
+Done. Saved results_v3d.rds

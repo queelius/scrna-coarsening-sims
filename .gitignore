@@ -1,0 +1,12 @@
+# Public datasets are NOT redistributed here. Fetch them from their canonical
+# sources (see README.md "Data"). Excluded to keep the repository small and to
+# avoid re-hosting third-party data.
+tabula_muris/
+klein2015/
+
+# Common R / editor cruft
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+.DS_Store

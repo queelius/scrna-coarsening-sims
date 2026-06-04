@@ -1,0 +1,46 @@
+---- de_factor = 1.3, alpha_1 = 0 ----
+   40 reps in 73.8 s
+  DE genes  : naive bias=0.043 sd=0.183  oracle bias=-0.028 sd=0.122
+  power |z|>2 : naive=1.00  oracle=1.00
+  type-I |z|>2: naive=0.075  oracle=0.075
+---- de_factor = 1.3, alpha_1 = 0.6 ----
+   40 reps in 85.9 s
+  DE genes  : naive bias=-0.033 sd=0.091  oracle bias=-0.015 sd=0.082
+  power |z|>2 : naive=0.90  oracle=1.00
+  type-I |z|>2: naive=0.025  oracle=0.025
+---- de_factor = 1.3, alpha_1 = 1 ----
+   40 reps in 92.7 s
+  DE genes  : naive bias=-0.012 sd=0.075  oracle bias=-0.004 sd=0.063
+  power |z|>2 : naive=1.00  oracle=1.00
+  type-I |z|>2: naive=0.000  oracle=0.025
+---- de_factor = 1.5, alpha_1 = 0 ----
+   40 reps in 66.1 s
+  DE genes  : naive bias=0.016 sd=0.205  oracle bias=-0.051 sd=0.127
+  power |z|>2 : naive=1.00  oracle=1.00
+  type-I |z|>2: naive=0.050  oracle=0.050
+---- de_factor = 1.5, alpha_1 = 0.6 ----
+   40 reps in 75 s
+  DE genes  : naive bias=-0.044 sd=0.078  oracle bias=-0.013 sd=0.068
+  power |z|>2 : naive=0.90  oracle=1.00
+  type-I |z|>2: naive=0.050  oracle=0.050
+---- de_factor = 1.5, alpha_1 = 1 ----
+   40 reps in 86.9 s
+  DE genes  : naive bias=-0.041 sd=0.072  oracle bias=-0.014 sd=0.068
+  power |z|>2 : naive=1.00  oracle=1.00
+  type-I |z|>2: naive=0.025  oracle=0.025
+---- de_factor = 2, alpha_1 = 0 ----
+   40 reps in 64.3 s
+  DE genes  : naive bias=-0.034 sd=0.186  oracle bias=-0.091 sd=0.127
+  power |z|>2 : naive=1.00  oracle=1.00
+  type-I |z|>2: naive=0.075  oracle=0.025
+---- de_factor = 2, alpha_1 = 0.6 ----
+   40 reps in 78.5 s
+  DE genes  : naive bias=-0.019 sd=0.084  oracle bias=-0.026 sd=0.082
+  power |z|>2 : naive=1.00  oracle=1.00
+  type-I |z|>2: naive=0.075  oracle=0.100
+---- de_factor = 2, alpha_1 = 1 ----
+   40 reps in 87.8 s
+  DE genes  : naive bias=-0.067 sd=0.067  oracle bias=-0.034 sd=0.059
+  power |z|>2 : naive=1.00  oracle=1.00
+  type-I |z|>2: naive=0.025  oracle=0.000
+Done.

@@ -1,0 +1,67 @@
+Loading Spleen-counts.csv...
+   23433 rows (genes+ERCC) x 1718 cells
+   2.1 s
+  ERCC rows: 92 
+  X_genes shape: 1718 x 23341 
+  X_ercc shape : 1718 x 92 
+
+Cell QC summary:
+  median total reads: 393249.5 
+  median genes detected: 1723 
+  cells passing QC (>=50k reads, >=500 genes): 1697 / 1718 
+
+Genes expressed in >=10 cells: 13117 / 23341 
+  gene mean summary: 0.041 8.062 97.895 
+
+ERCC ID match:  92 / 92 matched to concentration table
+  ERCC concentration range (attomoles/ul): [ 0.01430512 , 30000 ]
+  ERCC observed mean range: 0 1.69 904.9 
+  ERCC scale factor (mean-ratio): 0.249 
+  ERCC expected count range: 0.014 1.826 1355.766 
+
+Fitting ERCC dropout function...
+  fit time: 2.2 s
+  ERCC-fit alpha_0: 4.743  alpha_1: 1.138 
+  pi(y=0)   = 0.991 
+  pi(y=10)  = 0.882 
+  pi(y=100) = 0.376 
+
+Housekeeping genes present in dataset: Gapdh, Actb, B2m, Hprt, Tbp, Ywhaz, Hmbs, Tfrc, Sdha, Ubc, Pgk1, Rpl13a 
+Gene subset for fitting: 207 genes
+
+Fitting naive ZINB ( 207 genes)...
+   12 s, 0 failures
+Fitting ERCC oracle ( 207 genes)...
+   3.3 s, 0 failures
+
+=== Cell-total consistency ===
+  obs mean range : 247.707 406.216 1982.377 
+  naive (1-pi)*mu: 247.775 406.403 1981.979 
+  median |diff|  : 0.0732 
+
+=== Oracle / Naive mu ratios ===
+  ratio quantiles (5/25/50/75/95): 0.58 0.81 0.91 0.99 1 
+
+=== Housekeeping genes ===
+  gene          obs_mean    naive_mu   oracle_mu  oracle/naive
+  Actb           7995.13     7992.01     7996.37       1.001
+  B2m            1866.15     1870.45     1868.32       0.999
+  Rpl13a          397.16      398.46      397.79       0.998
+  Gapdh           385.18      441.58      400.37       0.907
+  Ywhaz           351.03      366.14      356.99       0.975
+  Hmbs             37.40      198.34       43.14       0.218
+  Hprt             87.27      242.87      103.34       0.425
+  Pgk1             55.74      193.00       70.34       0.364
+  Sdha            202.57      360.49      222.33       0.617
+  Tbp              22.26      193.35       27.31       0.141
+  Tfrc             11.62       11.64       16.98       1.458
+  Ubc              65.45       73.81       71.19       0.964
+
+=== ERCC-vs-endogenous shift estimate (housekeeping-based) ===
+  housekeeping naive pi: 0 0.003 0.003 0.128 0.041 0.811 0.641 0.711 0.438 0.885 0 0.113 
+  Implied dropout from naive (1-(1-pi)) = 0 0.003 0.003 0.128 0.041 0.811 0.641 0.711 0.438 0.885 0 0.113 
+  ERCC-fit dropout at obs_mean : 0.004 0.021 0.112 0.116 0.127 0.644 0.412 0.537 0.213 0.762 0.865 0.492 
+  difference (ERCC - naive)    : 0.004 0.019 0.109 -0.012 0.086 -0.167 -0.228 -0.174 -0.225 -0.123 0.865 0.379 
+  median ERCC-naive dropout difference: -0.004 
+
+Done. Saved results_v8_tabula_muris.rds

@@ -1,0 +1,30 @@
+Loading Klein 2015 K562_cells.csv...
+X_sub: 239 500   X_ercc: 239 92 
+
+ERCC with non-trivial signal: 11 
+sp.true range: 10.7 401.3 
+sp.true (first 5): 401.3 53 32.5 150.7 256.8 
+
+DECENT inputs: data 500 239   spikes 11 239 
+
+Fitting DECENT fitNoDE with CE-corrected sp.true...
+[1] "Finding starting values for EM algorithm..."
+No-DE model fitting started at 2026-05-23 20:11:33.657306
+Loading required package: VGAM
+Loading required package: stats4
+Loading required package: splines
+EM iteration 1 finished at 2026-05-23 20:11:46.717813  Log-likelihood: -387102.22284978
+EM iteration 2 finished at 2026-05-23 20:11:58.068442  Log-likelihood: -411101.533723566
+EM iteration 3 finished at 2026-05-23 20:12:08.498066  Log-likelihood: -424131.045040267
+EM iteration 4 finished at 2026-05-23 20:12:19.098404  Log-likelihood: -437113.3778647
+EM iteration 5 finished at 2026-05-23 20:12:29.339027  Log-likelihood: -448845.423218677
+EM iteration 6 finished at 2026-05-23 20:12:39.801952  Log-likelihood: -455083.438319243
+No-DE model fitting finished at 2026-05-23 20:12:39.802171
+There were 50 or more warnings (use warnings() to see the first 50)
+  runtime: 1.2 s
+
+=== DECENT SUCCEEDED ===
+  class: list 
+  names: est.pi0, est.mu, est.disp, est.sf, CE, loglik, logl, GQ, tau1, tau0 
+
+Saved.

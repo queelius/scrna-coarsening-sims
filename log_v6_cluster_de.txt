@@ -1,0 +1,46 @@
+Gene structure:
+  non-DE genes: 35 
+  DE genes (5 each at 1.5x, 2x, 3x): 15 
+  mu_base summary: 0.19 1.32 1.91 2.76 3.38 12.2 
+
+---- alpha_1 = 0 ----
+   30 reps in 115.3 s
+  non-DE logFC mean abs: naive = 0.059, oracle = 0.025, REG = 0.025
+  DE 1.5x : naive bias = -0.045, oracle = +0.012, REG = +0.014
+  DE 2x : naive bias = -0.027, oracle = -0.011, REG = -0.008
+  DE 3x : naive bias = -0.059, oracle = -0.023, REG = -0.018
+  type-I |z|>2 (over 35 non-DE): naive = 0.029, oracle = 0.000, REG = 0.029
+  power |z|>2 at 1.5x: naive = 1.00, oracle = 1.00, REG = 1.00
+  power |z|>2 at 2x: naive = 1.00, oracle = 1.00, REG = 1.00
+  power |z|>2 at 3x: naive = 1.00, oracle = 1.00, REG = 1.00
+---- alpha_1 = 0.3 ----
+   30 reps in 120.9 s
+  non-DE logFC mean abs: naive = 0.038, oracle = 0.015, REG = 0.015
+  DE 1.5x : naive bias = -0.004, oracle = +0.011, REG = +0.011
+  DE 2x : naive bias = -0.044, oracle = +0.007, REG = +0.007
+  DE 3x : naive bias = -0.075, oracle = -0.014, REG = -0.014
+  type-I |z|>2 (over 35 non-DE): naive = 0.029, oracle = 0.000, REG = 0.000
+  power |z|>2 at 1.5x: naive = 1.00, oracle = 1.00, REG = 1.00
+  power |z|>2 at 2x: naive = 1.00, oracle = 1.00, REG = 1.00
+  power |z|>2 at 3x: naive = 1.00, oracle = 1.00, REG = 1.00
+---- alpha_1 = 0.6 ----
+   30 reps in 138.8 s
+  non-DE logFC mean abs: naive = 0.037, oracle = 0.020, REG = 0.020
+  DE 1.5x : naive bias = -0.029, oracle = +0.007, REG = +0.007
+  DE 2x : naive bias = -0.045, oracle = +0.018, REG = +0.018
+  DE 3x : naive bias = -0.067, oracle = +0.007, REG = +0.007
+  type-I |z|>2 (over 35 non-DE): naive = 0.057, oracle = 0.086, REG = 0.086
+  power |z|>2 at 1.5x: naive = 1.00, oracle = 1.00, REG = 1.00
+  power |z|>2 at 2x: naive = 1.00, oracle = 1.00, REG = 1.00
+  power |z|>2 at 3x: naive = 1.00, oracle = 1.00, REG = 1.00
+---- alpha_1 = 1 ----
+   30 reps in 126.9 s
+  non-DE logFC mean abs: naive = 0.026, oracle = 0.015, REG = 0.015
+  DE 1.5x : naive bias = -0.031, oracle = +0.007, REG = +0.007
+  DE 2x : naive bias = -0.069, oracle = +0.014, REG = +0.014
+  DE 3x : naive bias = -0.123, oracle = -0.001, REG = -0.001
+  type-I |z|>2 (over 35 non-DE): naive = 0.143, oracle = 0.143, REG = 0.143
+  power |z|>2 at 1.5x: naive = 1.00, oracle = 1.00, REG = 1.00
+  power |z|>2 at 2x: naive = 1.00, oracle = 1.00, REG = 1.00
+  power |z|>2 at 3x: naive = 1.00, oracle = 1.00, REG = 1.00
+Done.

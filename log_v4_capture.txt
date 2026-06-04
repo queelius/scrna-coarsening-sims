@@ -1,0 +1,21 @@
+---- sigma_q = 0 ----
+   30 reps in 50 s
+  naive  rb (5/50/95): 0.473 0.645 0.864 
+  oracle rb (5/50/95): -0.005 0.021 0.036 
+  drop fit alpha_0 mean = 1.496 (truth 1.50), alpha_1 mean = 0.600 (truth 0.60)
+---- sigma_q = 0.25 ----
+   30 reps in 49.5 s
+  naive  rb (5/50/95): 0.47 0.632 0.855 
+  oracle rb (5/50/95): -0.011 0.022 0.04 
+  drop fit alpha_0 mean = 1.487 (truth 1.50), alpha_1 mean = 0.595 (truth 0.60)
+---- sigma_q = 0.5 ----
+   30 reps in 48.5 s
+  naive  rb (5/50/95): 0.456 0.626 0.771 
+  oracle rb (5/50/95): -0.005 0.022 0.038 
+  drop fit alpha_0 mean = 1.425 (truth 1.50), alpha_1 mean = 0.572 (truth 0.60)
+---- sigma_q = 1 ----
+   30 reps in 48.5 s
+  naive  rb (5/50/95): 0.408 0.549 0.769 
+  oracle rb (5/50/95): -0.004 0.015 0.035 
+  drop fit alpha_0 mean = 1.242 (truth 1.50), alpha_1 mean = 0.503 (truth 0.60)
+Done.

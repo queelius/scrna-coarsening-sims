@@ -1,0 +1,58 @@
+Loading Klein 2015 K562_cells.csv...
+   25436 rows x 239 cells in 0.1 s
+  count range: 0 2883 
+  ERCC rows: 92 
+  X_genes: 239 x 25343 
+  X_ercc : 239 x 92 
+
+Cell QC:
+  median total UMIs: 24588 
+  median genes detected: 6658 
+  cells passing QC: 239 / 239 
+
+Genes expressed in >=10 cells: 19063 / 25343 
+Subsetting to top 2000 genes by mean
+  subset mean range: 2.406 1289.494 
+
+ERCC matched: 92 
+  ERCC concentration range: 0.014 to 30000 
+  scale factor: 0.000571 
+  ERCC expected count range: 0 0.004 3.106 
+
+Fitting ERCC dropout (spike-fit oracle)...
+  fit time: 0.4 s
+  alpha_0: -2.415   alpha_1: 0.915 
+  pi(y=0)= 0.082  pi(y=10)= 0.01  pi(y=100)= 0.001 
+
+Running spike-fit oracle on 2000 genes...
+   16 s, 0 failures
+
+Fitting naive ZINB on 2000 genes...
+   18 s, 0 failures
+
+Loading DECENT...
+  DECENT input: data = 2000 x 239   spikes = 92 x 239 
+  Reducing to top 500 genes for DECENT runtime budget
+  DECENT genes: 500 
+
+Fitting DECENT fitNoDE...
+[1] "Finding starting values for EM algorithm..."
+No-DE model fitting started at 2026-05-23 20:09:03.398152
+Loading required package: VGAM
+Loading required package: stats4
+Loading required package: splines
+EM iteration 1 finished at 2026-05-23 20:09:12.632549  Log-likelihood: NA
+EM iteration 2 finished at 2026-05-23 20:09:21.945321  Log-likelihood: NA
+EM iteration 3 finished at 2026-05-23 20:09:31.444077  Log-likelihood: NA
+EM iteration 4 finished at 2026-05-23 20:09:40.856634  Log-likelihood: NA
+EM iteration 5 finished at 2026-05-23 20:09:50.211108  Log-likelihood: NA
+EM iteration 6 finished at 2026-05-23 20:09:59.625582  Log-likelihood: NA
+DECENT failed: missing value where TRUE/FALSE needed 
+There were 50 or more warnings (use warnings() to see the first 50)
+  DECENT runtime: 1 s
+
+Saved results_v11_klein_decent.rds
+
+=== DECENT did not return a fit (see error above) ===
+
+Done.

@@ -1,0 +1,29 @@
+---- alpha_1 = 0 ----
+   80 reps in 145.2 s
+  DE bias: naive = +0.0001 (SE 0.0165), oracle = -0.0902
+  Non-DE: naive mean abs = 0.042 max = 0.275, oracle mean abs = 0.014 max = 0.048
+---- alpha_1 = 0.2 ----
+   80 reps in 140.4 s
+  DE bias: naive = -0.0216 (SE 0.0161), oracle = -0.0594
+  Non-DE: naive mean abs = 0.020 max = 0.099, oracle mean abs = 0.012 max = 0.091
+---- alpha_1 = 0.4 ----
+   80 reps in 141.4 s
+  DE bias: naive = -0.0159 (SE 0.0114), oracle = -0.0356
+  Non-DE: naive mean abs = 0.031 max = 0.248, oracle mean abs = 0.013 max = 0.100
+---- alpha_1 = 0.6 ----
+   80 reps in 150.4 s
+  DE bias: naive = -0.0299 (SE 0.0101), oracle = -0.0190
+  Non-DE: naive mean abs = 0.019 max = 0.106, oracle mean abs = 0.009 max = 0.028
+---- alpha_1 = 0.8 ----
+   80 reps in 160.4 s
+  DE bias: naive = -0.0487 (SE 0.0088), oracle = -0.0163
+  Non-DE: naive mean abs = 0.024 max = 0.317, oracle mean abs = 0.009 max = 0.034
+---- alpha_1 = 1 ----
+   80 reps in 162.3 s
+  DE bias: naive = -0.0595 (SE 0.0086), oracle = -0.0226
+  Non-DE: naive mean abs = 0.015 max = 0.141, oracle mean abs = 0.007 max = 0.049
+---- alpha_1 = 1.3 ----
+   80 reps in 167.9 s
+  DE bias: naive = -0.0796 (SE 0.0075), oracle = -0.0406
+  Non-DE: naive mean abs = 0.018 max = 0.248, oracle mean abs = 0.007 max = 0.052
+Done.

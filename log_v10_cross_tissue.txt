@@ -1,0 +1,114 @@
+
+=================================================
+  Tabula Muris Marrow 
+=================================================
+Loading tabula_muris/FACS/Marrow-counts.csv ...
+   23433 rows x 5355 cells in 1.8 s
+  ERCC rows: 92 
+  cells passing QC: 5037 / 5355 
+  genes expressed in >=10 cells: 16178 
+  ERCC matched: 92  conc range [ 0.014 , 30000 ]
+
+Fitting ERCC dropout function...
+  fit time: 1.3 s
+  alpha_0: 4.529   alpha_1: 1.161 
+  pi(y=0)= 0.989  pi(y=10)= 0.851  pi(y=100)= 0.304 
+
+Housekeeping genes present: Gapdh, Actb, B2m, Hprt, Tbp, Ywhaz, Hmbs, Tfrc, Sdha, Ubc, Pgk1, Rpl13a 
+Gene subset: 207 genes
+
+Fitting naive ZINB...
+   14.2 s, 0 failures
+Fitting ERCC oracle...
+   2.2 s, 0 failures
+
+=== Cell-total consistency ===
+  obs mean (q5/50/95): 362.82 545.076 2597.262 
+  naive (1-pi)*mu    : 362.84 545.28 2595.084 
+  median |diff|      : 0.128 
+  max |diff|         : 9.81 
+  n genes            : 207 
+
+=== Oracle / Naive ratios ===
+  q5/25/50/75/95: 0.41 0.83 0.93 0.97 1 
+
+=== Housekeeping genes ===
+   gene    obs_mean    naive_mu   oracle_mu     ratio
+   Actb 10288.86758 10286.15100 10286.96982 1.0000796
+    B2m  1652.03117  1655.14045  1653.21979 0.9988396
+  Gapdh  1341.36232  1409.73447  1352.08086 0.9591032
+  Ywhaz   460.08358   467.54672   462.79747 0.9898422
+ Rpl13a   390.40480   411.38590   397.14972 0.9653946
+   Hmbs    71.75581   225.94430    83.05043 0.3675704
+   Hprt   161.07207   273.73331   180.32780 0.6587719
+   Pgk1   138.26822   224.61833   157.97487 0.7033035
+   Sdha   237.74985   341.21961   253.77940 0.7437421
+    Tbp    37.00933   147.97856    46.59519 0.3148780
+   Tfrc    26.71193    75.48453    36.40619 0.4823000
+    Ubc    71.89557    74.20711    73.67677 0.9928532
+
+=== Implied ERCC-endogenous shift (housekeeping) ===
+  ERCC pi  : 0.002 0.017 0.021 0.07 0.083 0.39 0.201 0.231 0.139 0.576 0.662 0.389 
+  naive pi : 0 0.002 0.048 0.016 0.051 0.682 0.412 0.384 0.304 0.75 0.646 0.031 
+  shift s  : 0.712 2.259 -0.847 1.537 0.529 -1.212 -1.021 -0.73 -0.996 -0.792 0.07 2.992 
+  median |s| (housekeeping): 0.922 
+
+Saved results_v10_marrow.rds
+
+=================================================
+  Tabula Muris Liver 
+=================================================
+Loading tabula_muris/FACS/Liver-counts.csv ...
+   23433 rows x 981 cells in 0.2 s
+  ERCC rows: 92 
+  cells passing QC: 714 / 981 
+  genes expressed in >=10 cells: 13366 
+  ERCC matched: 92  conc range [ 0.014 , 30000 ]
+
+Fitting ERCC dropout function...
+  fit time: 0.5 s
+  alpha_0: 3.044   alpha_1: 0.667 
+  pi(y=0)= 0.955  pi(y=10)= 0.809  pi(y=100)= 0.492 
+
+Housekeeping genes present: Gapdh, Actb, B2m, Hprt, Tbp, Ywhaz, Hmbs, Tfrc, Sdha, Ubc, Pgk1, Rpl13a 
+Gene subset: 209 genes
+
+Fitting naive ZINB...
+   1.8 s, 0 failures
+Fitting ERCC oracle...
+   2.6 s, 0 failures
+
+=== Cell-total consistency ===
+  obs mean (q5/50/95): 442.763 806.189 5073.085 
+  naive (1-pi)*mu    : 442.619 806.472 5074.556 
+  median |diff|      : 0.199 
+  max |diff|         : 27.7 
+  n genes            : 209 
+
+=== Oracle / Naive ratios ===
+  q5/25/50/75/95: 0.56 0.67 0.76 0.94 1 
+
+=== Housekeeping genes ===
+   gene    obs_mean   naive_mu  oracle_mu     ratio
+   Actb 2165.217087 2166.03162 2166.75598 1.0003344
+    B2m 1939.033613 1944.00594 1941.67457 0.9988007
+  Gapdh  845.504202  893.74710  871.98571 0.9756515
+   Hmbs   69.008403  170.12711  109.79863 0.6453917
+   Hprt   81.009804  130.75821  110.51482 0.8451846
+   Pgk1  122.382353  213.35505  175.48787 0.8225157
+ Rpl13a  134.327731  146.58176  143.80247 0.9810393
+   Sdha  298.984594  418.21263  348.94754 0.8343783
+    Tbp   12.226891   37.32530   25.06609 0.6715577
+   Tfrc    9.591036   31.49396   21.66052 0.6877673
+    Ubc  129.536415  136.90533  135.51884 0.9898726
+  Ywhaz  118.964986  133.75001  130.06212 0.9724270
+
+=== Implied ERCC-endogenous shift (housekeeping) ===
+  ERCC pi  : 0.111 0.119 0.19 0.553 0.526 0.458 0.443 0.319 0.79 0.813 0.449 0.463 
+  naive pi : 0 0.003 0.054 0.594 0.38 0.426 0.084 0.285 0.673 0.695 0.054 0.111 
+  shift s  : 4.83 3.904 1.411 -0.17 0.593 0.13 2.163 0.16 0.603 0.645 2.662 1.937 
+  median |s| (housekeeping): 1.028 
+
+Saved results_v10_liver.rds
+
+=== ALL TISSUES DONE ===

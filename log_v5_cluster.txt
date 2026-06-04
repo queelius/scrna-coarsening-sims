@@ -1,0 +1,46 @@
+---- alpha_1 = 0 ----
+   30 reps in 89.9 s
+  cluster A mu rel-bias (5/50/95):
+    naive : 0.182 0.331 0.585 
+    oracle: -0.034 0.018 0.059 
+  cluster B mu rel-bias (5/50/95):
+    naive : 0.057 0.151 0.302 
+    oracle: -0.059 0.038 0.07 
+  per-gene logFC bias (cluster-A vs cluster-B):
+    naive  abs-bias (5/50/95): 0.01 0.098 0.27 
+    oracle abs-bias (5/50/95): 0.003 0.028 0.115 
+    median |naive_bias| - |oracle_bias| = 0.0703 (positive = oracle helps)
+  DE call rate at |z|>2 (true |logFC|>log(1.5) in 45 genes):
+    naive  power = 1.00, type-I = 1.000
+    oracle power = 1.00, type-I = 1.000
+---- alpha_1 = 0.6 ----
+   30 reps in 98.1 s
+  cluster A mu rel-bias (5/50/95):
+    naive : 0.576 0.735 0.936 
+    oracle: -0.029 0.016 0.041 
+  cluster B mu rel-bias (5/50/95):
+    naive : 0.359 0.537 0.751 
+    oracle: -0.005 0.022 0.038 
+  per-gene logFC bias (cluster-A vs cluster-B):
+    naive  abs-bias (5/50/95): 0.008 0.087 0.281 
+    oracle abs-bias (5/50/95): 0.003 0.015 0.048 
+    median |naive_bias| - |oracle_bias| = 0.0722 (positive = oracle helps)
+  DE call rate at |z|>2 (true |logFC|>log(1.5) in 45 genes):
+    naive  power = 1.00, type-I = 1.000
+    oracle power = 1.00, type-I = 1.000
+---- alpha_1 = 1 ----
+   30 reps in 113.4 s
+  cluster A mu rel-bias (5/50/95):
+    naive : 0.709 0.923 1.115 
+    oracle: -0.021 0.008 0.032 
+  cluster B mu rel-bias (5/50/95):
+    naive : 0.292 0.605 0.872 
+    oracle: -0.012 0.018 0.035 
+  per-gene logFC bias (cluster-A vs cluster-B):
+    naive  abs-bias (5/50/95): 0.022 0.135 0.369 
+    oracle abs-bias (5/50/95): 0.003 0.017 0.055 
+    median |naive_bias| - |oracle_bias| = 0.1185 (positive = oracle helps)
+  DE call rate at |z|>2 (true |logFC|>log(1.5) in 45 genes):
+    naive  power = 1.00, type-I = 1.000
+    oracle power = 1.00, type-I = 1.000
+Done.

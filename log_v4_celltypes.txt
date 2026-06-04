@@ -1,0 +1,19 @@
+---- alpha_1 = 0 ----
+   30 reps in 39.1 s
+  vs population mean (mu_pop):
+    naive  rb (5/50/95): -0.318 0.021 0.274 
+    oracle rb (5/50/95): -0.171 -0.009 0.044 
+  median |naive_rb| - |oracle_rb| = +0.130 (positive = oracle helps)
+---- alpha_1 = 0.6 ----
+   30 reps in 46.7 s
+  vs population mean (mu_pop):
+    naive  rb (5/50/95): 0.553 0.693 1.343 
+    oracle rb (5/50/95): -0.023 -0.002 0.02 
+  median |naive_rb| - |oracle_rb| = +0.689 (positive = oracle helps)
+---- alpha_1 = 1 ----
+   30 reps in 53.9 s
+  vs population mean (mu_pop):
+    naive  rb (5/50/95): 0.613 0.877 1.484 
+    oracle rb (5/50/95): -0.018 0.006 0.023 
+  median |naive_rb| - |oracle_rb| = +0.873 (positive = oracle helps)
+Done.

@@ -1,0 +1,38 @@
+True DE genes: 9 17 21 28 31 33 38 44 45 48 
+True logFC: nonDE all 0; 10 DE at log( 2 ) = 0.693 
+
+---- alpha_1 = 0 ----
+   25 reps in 59.2 s
+  ---- non-DE genes (true logFC = 0) ----
+  naive  logFC: mean = -0.034  (|max| = 0.446 ); SD across reps median = 0.252 
+  oracle logFC: mean = 0.01  (|max| = 0.089 ); SD across reps median = 0.167 
+  ---- DE genes (true logFC = 0.693 ) ----
+  naive  logFC: mean = 0.68  bias = -0.013 ; SD across reps median = 0.172 
+  oracle logFC: mean = 0.697  bias = 0.004 ; SD across reps median = 0.171 
+  discovery rates (|z| > 2):
+    naive:  type-I =  0   power =  1 
+    oracle: type-I =  0.05   power =  1 
+---- alpha_1 = 0.6 ----
+   25 reps in 1.2 s
+  ---- non-DE genes (true logFC = 0) ----
+  naive  logFC: mean = -0.018  (|max| = 0.28 ); SD across reps median = 0.129 
+  oracle logFC: mean = -0.006  (|max| = 0.153 ); SD across reps median = 0.102 
+  ---- DE genes (true logFC = 0.693 ) ----
+  naive  logFC: mean = 0.708  bias = 0.015 ; SD across reps median = 0.084 
+  oracle logFC: mean = 0.697  bias = 0.004 ; SD across reps median = 0.088 
+  discovery rates (|z| > 2):
+    naive:  type-I =  0.025   power =  1 
+    oracle: type-I =  0.075   power =  1 
+---- alpha_1 = 1 ----
+   25 reps in 1.5 s
+  ---- non-DE genes (true logFC = 0) ----
+  naive  logFC: mean = -0.01  (|max| = 0.243 ); SD across reps median = 0.09 
+  oracle logFC: mean = 0.002  (|max| = 0.07 ); SD across reps median = 0.083 
+  ---- DE genes (true logFC = 0.693 ) ----
+  naive  logFC: mean = 0.624  bias = -0.069 ; SD across reps median = 0.069 
+  oracle logFC: mean = 0.693  bias = 0 ; SD across reps median = 0.082 
+  discovery rates (|z| > 2):
+    naive:  type-I =  0.1   power =  1 
+    oracle: type-I =  0.1   power =  1 
+
+Done. Saved results_v3e.rds
