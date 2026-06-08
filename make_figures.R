@@ -1,13 +1,13 @@
 # Figure generation for the scrna-coarsening paper.
 # Reads results_v*.rds files and produces PDFs in
-# /home/spinoza/github/papers/scrna-coarsening/figures/.
+# /home/spinoza/github/coarsening/papers/scrna-coarsening/figures/.
 
 suppressPackageStartupMessages({
     library(ggplot2)
     library(scales)
 })
 
-fig_dir <- "/home/spinoza/github/papers/scrna-coarsening/figures"
+fig_dir <- "/home/spinoza/github/coarsening/papers/scrna-coarsening/figures"
 dir.create(fig_dir, showWarnings = FALSE, recursive = TRUE)
 
 theme_set(theme_minimal(base_size = 11) +
